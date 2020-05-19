@@ -741,7 +741,7 @@ p {
 .video-popup {
   padding: 70px 55px;
   background: #fff;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);

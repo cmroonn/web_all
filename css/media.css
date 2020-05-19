@@ -135,6 +135,11 @@
     width: 100%;
     max-width: 500px; } }
 
+@media screen and (max-width: 992px) {
+  .video-popup__wrapper iframe {
+    width: 483px;
+    height: 271.5px; } }
+
 @media screen and (max-width: 768px) {
   .container {
     padding: 0 5px; }
@@ -170,3 +175,10 @@
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column; } }
+
+@media screen and (max-width: 520px) {
+  .video-popup {
+    padding: 150px 20px; }
+  .video-popup__wrapper iframe {
+    width: 302px;
+    height: 170px; } }
