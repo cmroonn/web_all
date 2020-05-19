@@ -78,9 +78,11 @@
     transform: unset;
     top: 0;
     left: 0;
-    position: absolute;
+    position: fixed;
     padding: 50px 30px;
-    width: 100%; }
+    width: 100%;
+    overflow-y: scroll;
+    max-height: 90vh; }
     .signup-popup .close-popup,
     .success-popup .close-popup {
       -webkit-transform: unset;
@@ -94,7 +96,7 @@
     -webkit-transform: unset;
     -ms-transform: unset;
     transform: unset;
-    overflow-y: scroll; }
+    overflow-y: auto; }
     .signup-popup__wrapper .socials,
     .success-popup__wrapper .socials {
       -webkit-flex-wrap: wrap;
@@ -130,7 +132,8 @@
       -ms-flex-pack: justify;
       justify-content: space-between; }
   .success-popup__video img {
-    width: 100%; } }
+    width: 100%;
+    max-width: 500px; } }
 
 @media screen and (max-width: 768px) {
   .container {

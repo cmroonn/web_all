@@ -3,16 +3,17 @@
 document.addEventListener("DOMContentLoaded", function () {
   var overlay = document.querySelector(".overlay");
   {
-    var bonusButton = document.getElementById("bonus");
-    var bonusGift = document.querySelector(".bonus-hidden");
-    bonusButton.addEventListener("mouseover", function () {
-      bonusGift.classList.add("show");
-    });
-    bonusButton.addEventListener("mouseout", function () {
-      bonusGift.classList.remove("show");
-    });
-    bonusButton.addEventListener("click", function (e) {
-      e.preventDefault();
+    var bonusButton = document.querySelectorAll(".content__main-bonus");
+    bonusButton.forEach(function (el) {
+      el.addEventListener("mouseover", function () {
+        el.closest(".bonus-wrapper").children[1].classList.add("show");
+      });
+      el.addEventListener("mouseout", function () {
+        el.closest(".bonus-wrapper").children[1].classList.remove("show");
+      });
+      el.addEventListener("click", function (e) {
+        e.preventDefault();
+      });
     });
   } // Sign up popup settings 
 
@@ -155,6 +156,22 @@ document.addEventListener("DOMContentLoaded", function () {
   {
     var phoneMask = IMask(document.getElementById('phone-mask'), {
       mask: '+{7}(000)000-00-00'
+    });
+  } // Call video popup
+
+  {
+    var buttons = document.querySelectorAll(".content__info-invite");
+
+    var _popup3 = document.querySelector(".video-popup");
+
+    buttons.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        _popup3.classList.add("show");
+      });
+    });
+
+    _popup3.querySelector(".close-popup").addEventListener("click", function () {
+      _popup3.classList.remove("show");
     });
   }
 });
