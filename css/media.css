@@ -1,0 +1,169 @@
+@media screen and (min-width: 1700px) {
+  .seva-image {
+    width: 1536px;
+    height: 998px; } }
+
+@media screen and (max-width: 1919.98px) {
+  .seva-image {
+    background: url(../img/seva-2.png) no-repeat;
+    width: 863px;
+    height: 850px;
+    background-size: 100% 100%;
+    background-position: center center;
+    right: 60px; }
+  .points {
+    bottom: 200px; }
+  .content__main {
+    margin-left: 0; }
+  .content__info {
+    padding-right: 40px; } }
+
+@media screen and (max-width: 1919.98px) and (max-height: 890px) {
+  .seva-image {
+    width: 743px;
+    height: 730px;
+    right: 100px; } }
+
+@media screen and (min-width: 1300.98px) {
+  .top__logo-mob {
+    display: none; }
+  .content-mob {
+    display: none; }
+  .sicks {
+    display: none; }
+  .speaker-mob {
+    display: none; } }
+
+@media screen and (max-width: 1300px) {
+  .top__logo {
+    display: none; }
+  .main {
+    background: url(../img/bg-mob.jpg) no-repeat;
+    background-size: 100%; }
+  .seva-image {
+    display: none; }
+  .content {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .content__info {
+    display: none; }
+  .seva-image-mob {
+    background: url(../img/seva-mob.png) no-repeat;
+    width: 404px;
+    height: 506px;
+    background-size: 100% 100%;
+    background-position: center center;
+    position: absolute;
+    top: 0px;
+    right: -50px; }
+  .special-popup {
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    padding: 40px 35px;
+    top: 0;
+    max-height: 90vh;
+    overflow-y: scroll;
+    position: fixed; }
+  .special-popup__wrapper {
+    -webkit-transform: unset;
+    -ms-transform: unset;
+    transform: unset; }
+  .signup-popup,
+  .success-popup {
+    -webkit-transform: unset;
+    -ms-transform: unset;
+    transform: unset;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 50px 30px;
+    width: 100%; }
+    .signup-popup .close-popup,
+    .success-popup .close-popup {
+      -webkit-transform: unset;
+      -ms-transform: unset;
+      transform: unset; }
+  .signup-popup h3 {
+    font-size: 25px;
+    max-width: unset; }
+  .signup-popup__wrapper,
+  .success-popup__wrapper {
+    -webkit-transform: unset;
+    -ms-transform: unset;
+    transform: unset;
+    overflow-y: scroll; }
+    .signup-popup__wrapper .socials,
+    .success-popup__wrapper .socials {
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding: 0 30px;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+  .success-popup .sva-logo {
+    display: none; }
+  .success-popup .sva-logo-mob {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto 15px; }
+  .success-popup__wrapper h3 {
+    font-size: 30px;
+    margin: 0 0 10px; }
+  .success-popup__wrapper p {
+    font-size: 14px; }
+  .success-popup__row {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .success-popup__row a {
+      width: 50px;
+      margin-right: 0;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .success-popup__video img {
+    width: 100%; } }
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 5px; }
+  h1 {
+    font-size: 30px;
+    max-width: 235px;
+    line-height: normal;
+    margin: auto; }
+  .content__main-uppertitle {
+    font-size: 20px;
+    max-width: 235px;
+    margin: auto;
+    margin-bottom: 15px; }
+  .content__main-date {
+    font-size: 16px;
+    margin: 35px auto 40px;
+    max-width: 235px; }
+  .content__main-description {
+    font-size: 14px;
+    max-width: 235px;
+    margin: auto; }
+  .content__main-btn {
+    width: 253px;
+    height: 50px;
+    margin: 45px auto 45px; }
+    .content__main-btn span {
+      font-size: 15px; }
+  .content__main-bonus span {
+    font-size: 15px; }
+  .bonus-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
