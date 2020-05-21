@@ -702,7 +702,7 @@ p {
   align-items: center;
   padding-left: 10px;
   cursor: pointer; }
-  .content__info-invite img {
+  .content__info-invite .img {
     margin-right: 15px;
     -webkit-animation: pulse 1.8s infinite;
     animation: pulse 1.8s infinite;
@@ -711,7 +711,17 @@ p {
     transform: scale(1);
     -webkit-box-shadow: 0 0 0 0 #ff4848;
     box-shadow: 0 0 0 0 #ff4848;
-    border-radius: 50%; }
+    border-radius: 50%;
+    background: url(../img/video.svg) no-repeat;
+    background-size: cover;
+    width: 35px;
+    height: 35px; }
+    .content__info-invite .img:hover {
+      background: url(../img/video-hover.svg) no-repeat;
+      background-size: cover;
+      -webkit-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s; }
   .content__info-invite span {
     font-style: italic;
     font-size: 0.889rem;
