@@ -1092,7 +1092,9 @@ p {
   margin-top: 60px; }
   .success-popup__video iframe {
     width: 80vw;
-    height: 40vw; }
+    height: 40vw;
+    max-width: 844px;
+    max-height: 417px; }
 
 .success-popup__row {
   margin-top: 25px;
