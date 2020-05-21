@@ -216,5 +216,13 @@
     height: 170px; } }
 
 @media screen and (max-width: 405px) {
-  .socials .social {
-    margin-bottom: 15px; } }
+  .signup-popup__wrapper .socials {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    max-width: 250px;
+    margin: 40px auto 0; }
+    .signup-popup__wrapper .socials .social {
+      margin-right: 0;
+      margin-bottom: 15px; } }
