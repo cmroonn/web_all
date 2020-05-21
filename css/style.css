@@ -2,8 +2,9 @@
 * Variables
 */
 *::-moz-selection {
-  color: #ff4848;
-  background: #3A3A3A; }
+  /*color: #ff4848;
+  background: #3A3A3A;*/
+  background: #ff4848;}
 
 *::selection {
   color: #ff4848;
