@@ -2,13 +2,14 @@
 * Variables
 */
 *::-moz-selection {
-  /*color: #ff4848;
-  background: #3A3A3A;*/
-  background: #ff4848;}
+  /*color: $red;
+        background: $black;*/
+  background: #ff4848; }
 
 *::selection {
-  color: #ff4848;
-  background: #3A3A3A; }
+  /*color: $red;
+        background: $black;*/
+  background: #ff4848; }
 
 html {
   font-size: 18px; }
@@ -438,7 +439,6 @@ p {
     -ms-transform: translate(-50%, 0) rotate(0deg) skew(-10deg);
     transform: translate(-50%, 0) rotate(0deg) skew(-10deg);
     width: 21px;
-    /*height: 10.8px;*/
     height: 9.8px;
     overflow: hidden; }
     .point-dialog .arrow:before {
@@ -520,13 +520,13 @@ p {
     font-size: 16px; }
   .content__info-hidden .arrow {
     position: absolute;
-    top: 55%;
-    right: -33px;
-    -webkit-transform: translate(-50%, 0) rotate(-90deg) skew(0deg);
-    -ms-transform: translate(-50%, 0) rotate(-90deg) skew(0deg);
-    transform: translate(-50%, 0) rotate(-90deg) skew(0deg);
-    width: 21px;
-    height: 10.8px;
+    top: 40%;
+    right: -26px;
+    -webkit-transform: translate(-50%, 0) rotate(0deg) skew(-10deg);
+    -ms-transform: translate(-50%, 0) rotate(0deg) skew(-10deg);
+    transform: translate(-50%, 0) rotate(0deg) skew(-10deg);
+    width: 15px;
+    height: 30px;
     overflow: hidden; }
     .content__info-hidden .arrow:before {
       content: "";
@@ -534,10 +534,14 @@ p {
       /*width: 21px;*/
       width: 21px;
       height: 21px;
-      border-radius: 11px;
+      border-radius: 5px;
       background: rgba(0, 0, 0, 0.9);
       position: absolute;
-      bottom: 0px; }
+      bottom: 0px;
+      left: -9px;
+      -webkit-transform: rotate(42deg);
+      -ms-transform: rotate(42deg);
+      transform: rotate(42deg); }
       @supports (-webkit-backdrop-filter: blur(5px)) or (backdrop-filter: blur(5px)) {
         .content__info-hidden .arrow:before {
           -webkit-backdrop-filter: blur(5px);
@@ -699,7 +703,15 @@ p {
   padding-left: 10px;
   cursor: pointer; }
   .content__info-invite img {
-    margin-right: 5px; }
+    margin-right: 15px;
+    -webkit-animation: pulse 1.8s infinite;
+    animation: pulse 1.8s infinite;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-box-shadow: 0 0 0 0 #ff4848;
+    box-shadow: 0 0 0 0 #ff4848;
+    border-radius: 50%; }
   .content__info-invite span {
     font-style: italic;
     font-size: 0.889rem;

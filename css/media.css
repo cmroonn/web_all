@@ -214,3 +214,7 @@
   .video-popup__wrapper iframe {
     width: 302px;
     height: 170px; } }
+
+@media screen and (max-width: 405px) {
+  .socials .social {
+    margin-bottom: 15px; } }
