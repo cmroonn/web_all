@@ -12,8 +12,7 @@ $(document).ready(function() {
             dataType: "html", //формат данных
             data: $("#"+ajax_form).serialize(),  // Сеарилизуем объект
             success: function(response) { //Данные отправлены успешно
-                $('.success-popup').addClass('show');
-                $('.signup-popup').removeClass('show');
+                window.location.href = "/thanks.html"
             },
             error: function(response) { // Данные не отправлены
                 $('#result_form').html('Ошибка. Данные не отправлены.');

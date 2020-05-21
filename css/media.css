@@ -24,6 +24,17 @@
     height: 730px;
     right: 100px; } }
 
+@media screen and (max-height: 960px) {
+  .success-popup-container {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+  .success-popup {
+    min-height: 100vh; }
+  .success-popup-video {
+    max-width: 600px; } }
+
 @media screen and (min-width: 1300.98px) {
   .top__logo-mob {
     display: none; }
@@ -32,6 +43,8 @@
   .sicks {
     display: none; }
   .speaker-mob {
+    display: none; }
+  .success-popup .sva-logo-mob {
     display: none; } }
 
 @media screen and (max-width: 1300px) {
@@ -64,10 +77,14 @@
     transform: translate(-50%, 0);
     padding: 40px 35px;
     top: 0;
-    max-height: 90vh;
+    height: 100vh;
     overflow-y: scroll;
     position: fixed; }
   .special-popup__wrapper {
+    -webkit-transform: unset;
+    -ms-transform: unset;
+    transform: unset; }
+  .signup-popup__inputs {
     -webkit-transform: unset;
     -ms-transform: unset;
     transform: unset; }
@@ -82,12 +99,16 @@
     padding: 50px 30px;
     width: 100%;
     overflow-y: scroll;
-    max-height: 90vh; }
+    height: 100vh; }
     .signup-popup .close-popup,
     .success-popup .close-popup {
       -webkit-transform: unset;
       -ms-transform: unset;
       transform: unset; }
+  .success-popup {
+    position: relative;
+    top: unset;
+    left: unset; }
   .signup-popup h3 {
     font-size: 25px;
     max-width: unset; }
@@ -136,6 +157,17 @@
     max-width: 500px; } }
 
 @media screen and (max-width: 992px) {
+  .video-popup {
+    height: 100vh;
+    width: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
   .video-popup__wrapper iframe {
     width: 483px;
     height: 271.5px; } }
