@@ -411,7 +411,7 @@ p {
   .point-dialog .text {
     /*padding: 15px;
         padding-left: 25px;*/
-    padding: 25px 25px 25px 50px;
+    padding: 35px 25px 25px 50px;
     z-index: 2;
     position: relative;
     font-size: 0.889rem;
