@@ -4,12 +4,14 @@
 *::-moz-selection {
   /*color: $red;
         background: $black;*/
-  background: #ff4848; }
+  background: #ff4848;
+  color: #fff; }
 
 *::selection {
   /*color: $red;
         background: $black;*/
-  background: #ff4848; }
+  background: #ff4848;
+  color: #fff; }
 
 html {
   font-size: 18px; }
@@ -1088,6 +1090,9 @@ p {
 
 .success-popup__video {
   margin-top: 60px; }
+  .success-popup__video iframe {
+    width: 80vw;
+    height: 40vw; }
 
 .success-popup__row {
   margin-top: 25px;
