@@ -1,7 +1,6 @@
 'use strict';
 
 document.addEventListener("DOMContentLoaded", function () {
-  var overlay = document.querySelector(".overlay");
   {
     var bonusButton = document.querySelectorAll(".content__main-bonus");
     bonusButton.forEach(function (el) {
@@ -19,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   {
     var button = document.querySelectorAll(".content__main-btn");
-    var popup = document.querySelector(".signup-popup");
+    var popup = document.querySelector(".overlay-signup");
     var nextButton = document.getElementById("signUpChannelConfirm");
     var channelsWindow = document.getElementById("signUpChannel");
     var formWindow = document.getElementById("signUpForm");
@@ -28,11 +27,10 @@ document.addEventListener("DOMContentLoaded", function () {
     var input = document.querySelectorAll(".signup-popup__input");
     var label = document.querySelectorAll(".signup-popup__input label");
     var thanksPopup = document.querySelector(".success-popup");
-    var specialPopup = document.querySelector(".special-popup");
+    var specialPopup = document.querySelector(".overlay-special");
     button.forEach(function (btn) {
       btn.addEventListener("click", function (e) {
         e.preventDefault();
-        overlay.classList.add("show");
         popup.classList.add("show");
         specialPopup.classList.remove("show");
       });
@@ -43,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     close.addEventListener("click", function (e) {
       popup.classList.remove("show");
-      overlay.classList.remove("show");
     });
     socials.forEach(function (element) {
       element.addEventListener("click", function () {
@@ -65,16 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log(el.children[0].focus);
       });
     });
-  } // Success popup Settings
-  // {
-  //     const close = document.querySelector(".success-popup .close-popup");
-  //     const popup = document.querySelector(".success-popup");
-  //     close.addEventListener("click", e => {
-  //         popup.classList.remove("show");
-  //         overlay.classList.remove("show");
-  //     });
-  // }
-  // Special popup Settings 
+  } // Special popup Settings 
 
   {
     var counter = function counter(time) {
@@ -86,15 +74,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (time === 0) {
           _popup.classList.remove("show");
-
-          overlay.classList.remove("show");
         }
       }
 
       return getCount;
     };
 
-    var _popup = document.querySelector(".special-popup");
+    var _popup = document.querySelector(".overlay-special");
 
     var count = document.getElementById("counter");
 
@@ -106,16 +92,13 @@ document.addEventListener("DOMContentLoaded", function () {
     var popupOpen = function popupOpen() {
       _popup.classList.add("show");
 
-      overlay.classList.add("show");
       setInterval(startCounter, 1000);
     };
 
-    setTimeout(popupOpen, 50000);
+    setTimeout(popupOpen, 2000);
 
     _close.addEventListener("click", function (e) {
       _popup.classList.remove("show");
-
-      overlay.classList.remove("show");
     });
   } // Dialogs settings 
 
@@ -159,40 +142,36 @@ document.addEventListener("DOMContentLoaded", function () {
   {
     var buttons = document.querySelectorAll(".content__info-invite");
 
-    var _popup2 = document.querySelector(".video-popup");
+    var _popup2 = document.querySelector(".overlay-video");
 
     buttons.forEach(function (btn) {
       btn.addEventListener("click", function () {
         _popup2.classList.add("show");
-
-        overlay.classList.add("show");
       });
     });
 
     _popup2.querySelector(".close-popup").addEventListener("click", function () {
       _popup2.classList.remove("show");
-
-      overlay.classList.remove("show");
     });
   }
   {
-    var windows = document.querySelectorAll(".signup-popup, .special-popup, .video-popup");
+    var overlays = document.querySelectorAll(".overlay");
 
     document.onkeydown = function (evt) {
       evt = evt || window.event;
 
       if (evt.keyCode == 27) {
-        windows.forEach(function (el) {
+        overlays.forEach(function (el) {
           el.classList.remove("show");
-          overlay.classList.remove("show");
         });
       }
     };
 
-    overlay.addEventListener("click", function () {
-      windows.forEach(function (el) {
-        el.classList.remove("show");
-        overlay.classList.remove("show");
+    overlays.forEach(function (element) {
+      element.addEventListener("click", function (e) {
+        if (!element.contains(e.target) || e.target === element) {
+          element.classList.remove("show");
+        }
       });
     });
   }

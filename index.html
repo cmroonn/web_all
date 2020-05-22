@@ -6,9 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ТОП 5 болей фрилансеров!</title>
 
+    <link rel="shortcut icon" href="http://digital-school.biz/favicon.ico" type="image/x-icon">
+    <!-- FONTS -->
     <link rel="stylesheet" href="fonts/fonts.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+
+
+    <!— Yandex.Metrika counter —>
+        <script type="text/javascript">
+            (function (m, e, t, r, i, k, a) {
+                m[i] = m[i] || function () {
+                    (m[i].a = m[i].a || []).push(arguments)
+                };
+                m[i].l = 1 * new Date();
+                k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode
+                    .insertBefore(k, a)
+            })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+            ym(54938368, "init", {
+                clickmap: true,
+                trackLinks: true,
+                accurateTrackBounce: true
+            });
+        </script>
+        <noscript>
+            <div><img src="https://mc.yandex.ru/watch/54938368" style="position:absolute; left:-9999px;" alt="" /></div>
+        </noscript>
+    <!— /Yandex.Metrika counter —>
+
 </head>
 
 <body>
@@ -133,7 +162,8 @@
                         <div class="point-dialog point-dialog-2" data-key="2">
                             <div class="text">
                                 <p>
-                                    <span>Заебали</span> заказчики? А ты устал что-то доказывать и просто соглашаешься и делаешь,
+                                    <span>Заебали</span> заказчики? А ты устал что-то доказывать и просто соглашаешься и
+                                    делаешь,
                                     лишь "бы отстали". Тебе нравятся такие деньги? Это по твоему свобода?
                                 </p>
                             </div>
@@ -282,7 +312,7 @@
                 </h4>
                 <div class="sicks__sick">
                     <span class="sick-number">
-                        01
+                        1
                     </span>
 
                     <p>
@@ -306,7 +336,7 @@
 
                 <div class="sicks__sick">
                     <span class="sick-number">
-                        02
+                        2
                     </span>
 
                     <p>
@@ -330,7 +360,7 @@
 
                 <div class="sicks__sick">
                     <span class="sick-number">
-                        03
+                        3
                     </span>
 
                     <p>
@@ -355,7 +385,7 @@
 
                 <div class="sicks__sick">
                     <span class="sick-number">
-                        04
+                        4
                     </span>
 
                     <p>
@@ -379,7 +409,7 @@
 
                 <div class="sicks__sick">
                     <span class="sick-number">
-                        05
+                        5
                     </span>
 
                     <p>
@@ -457,96 +487,102 @@
     </main>
 
 
-    <!-- overlay -->
-    <div class="overlay"></div>
 
     <!-- Popup Windows -->
 
-    <form class="signup-popup" id="form">
-        <div class="close-popup"></div>
-        <div class="signup-popup__wrapper show" id="signUpChannel">
-            <h3>
-                Выберите удобный для вас канал связи для записи на вебинар
-            </h3>
+    <div class="overlay overlay-signup">
+        <form class="popup signup-popup" id="form">
+            <div class="close-popup"></div>
+            <div class="signup-popup__wrapper show" id="signUpChannel">
+                <h3>
+                    Выберите удобный для вас канал связи для записи на вебинар
+                </h3>
 
-            <p>
-                Начало 28.07.2019 в 14:00
-            </p>
+                <p>
+                    Начало 28.07.2019 в 14:00
+                </p>
 
-            <div class="socials">
-                <label class="social">
-                    <input type="radio" name="channel" value="Viber">
-                    <img src="img/socials/viber.svg" alt="viber" class="social-inactive show">
-                    <img src="img/socials/viber-active.svg" alt="viber" class="social-active">
-                </label>
+                <div class="socials">
+                    <label class="social">
+                        <input type="radio" name="channel" value="Viber" onclick="ym(56030674, 'reachGoal', 'Viber'); return true;">
+                        <img src="img/socials/viber.svg" alt="viber" class="social-inactive show">
+                        <img src="img/socials/viber-active.svg" alt="viber" class="social-active">
+                        <span>Viber</span>
+                    </label>
 
-                <label class="social">
-                    <input type="radio" name="channel" value="WhatsApp">
-                    <img src="img/socials/wp.svg" alt="whatsapp" class="social-inactive show">
-                    <img src="img/socials/wp-active.svg" alt="whatsapp" class="social-active">
-                </label>
+                    <label class="social">
+                        <input type="radio" name="channel" value="WhatsApp" onclick="ym(56030677, 'reachGoal', 'WhatsApp'); return true;">
+                        <img src="img/socials/wp.svg" alt="whatsapp" class="social-inactive show">
+                        <img src="img/socials/wp-active.svg" alt="whatsapp" class="social-active">
 
-                <label class="social">
-                    <input type="radio" name="channel" value="Vkontakte">
-                    <img src="img/socials/vk.svg" alt="vkontakte" class="social-inactive show">
-                    <img src="img/socials/vk-active.svg" alt="vkontakte" class="social-active">
-                </label>
+                        <span>WhatsApp</span>
+                    </label>
 
-                <label class="social">
-                    <input type="radio" name="channel" value="Facebook">
-                    <img src="img/socials/fb.svg" alt="facebook" class="social-inactive show">
-                    <img src="img/socials/fb-active.svg" alt="facebook" class="social-active">
-                </label>
+                    <label class="social">
+                        <input type="radio" name="channel" value="Vkontakte" onclick="ym(56030680, 'reachGoal', 'FB'); return true;">
+                        <img src="img/socials/vk.svg" alt="vkontakte" class="social-inactive show">
+                        <img src="img/socials/vk-active.svg" alt="vkontakte" class="social-active">
+                        <span>VKontakte</span>
+                    </label>
 
-                <label class="social">
-                    <input type="radio" name="channel" value="E-mail">
-                    <img src="img/socials/email.svg" alt="email" class="social-inactive show">
-                    <img src="img/socials/email-active.svg" alt="email" class="social-active">
-                </label>
+                    <label class="social">
+                        <input type="radio" name="channel" value="Facebook" onclick="ym(56030689, 'reachGoal', 'TG'); return true;">
+                        <img src="img/socials/fb.svg" alt="facebook" class="social-inactive show">
+                        <img src="img/socials/fb-active.svg" alt="facebook" class="social-active">
+                        <span>Facebook</span>
+                    </label>
 
-                
+                    <label class="social">
+                        <input type="radio" name="channel" value="E-mail" onclick="ym(56030692, 'reachGoal', 'mail'); return true;">
+                        <img src="img/socials/email.svg" alt="email" class="social-inactive show">
+                        <img src="img/socials/email-active.svg" alt="email" class="social-active">
+                        <span>E-mail</span>
+                    </label>
+
+
+                </div>
+
+                <button type="button" class="signup-popup__btn" id="signUpChannelConfirm" disabled>
+                    <span>
+                        ОК
+                    </span>
+                </button>
             </div>
 
-            <button type="button" class="signup-popup__btn" id="signUpChannelConfirm" disabled>
-                <span>
-                    ОК
-                </span>
-            </button>
-        </div>
+            <div class="signup-popup__wrapper" id="signUpForm">
+                <h3>
+                    Что бы записаться на вебинар заполните форму
+                </h3>
 
-        <div class="signup-popup__wrapper" id="signUpForm">
-            <h3>
-                Что бы записаться на вебинар заполните форму
-            </h3>
+                <p>
+                    Начало 28.07.2019 в 14:00
+                </p>
 
-            <p>
-                Начало 28.07.2019 в 14:00
-            </p>
+                <div class="signup-popup__inputs">
+                    <div class="signup-popup__input">
+                        <input type="text" name="name" required>
+                        <label>Имя</label>
+                    </div>
 
-            <div class="signup-popup__inputs">
-                <div class="signup-popup__input">
-                    <input type="text" name="name" required>
-                    <label>Имя</label>
+                    <div class="signup-popup__input">
+                        <input type="tel" name="tel" required id="phone-mask">
+                        <label>Телефон</label>
+                    </div>
+
+                    <div class="signup-popup__input">
+                        <input type="email" name="mail" required>
+                        <label>Почта</label>
+                    </div>
                 </div>
 
-                <div class="signup-popup__input">
-                    <input type="tel" name="tel" required id="phone-mask">
-                    <label>Телефон</label>
-                </div>
-
-                <div class="signup-popup__input">
-                    <input type="email" name="mail" required>
-                    <label>Почта</label>
-                </div>
+                <button type="submit" class="signup-popup__btn" id="sender">
+                    <span>
+                        Записаться
+                    </span>
+                </button>
             </div>
-
-            <button type="submit" class="signup-popup__btn" id="sender">
-                <span>
-                    Записаться
-                </span>
-            </button>
-        </div>
-    </form>
+        </form>
+    </div>
 
     <!-- <div class="success-popup">
         <div class="close-popup"></div>
@@ -622,76 +658,82 @@
     </div> -->
 
 
-    <div class="video-popup">
-        <div class="close-popup"></div>
+    <div class="overlay overlay-video">
+        <div class="popup video-popup">
+            <div class="close-popup"></div>
 
-        <div class="video-popup__wrapper">
-            <iframe width="966" height="543" src="https://www.youtube.com/embed/I3j2VrhqTAA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="video-popup__wrapper">
+                <iframe width="966" height="543" src="https://www.youtube.com/embed/I3j2VrhqTAA" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
         </div>
     </div>
 
-    <div class="special-popup">
-        <div class="close-popup"></div>
-        <div class="special-popup__wrapper">
-            <img src="img/docs.png" alt="documents" class="special-popup__wrapper-docs">
+    <div class="overlay overlay-special">
+        <div class="popup special-popup">
+            <div class="close-popup"></div>
+            <div class="special-popup__wrapper">
+                <img src="img/docs.png" alt="documents" class="special-popup__wrapper-docs">
 
-            <div class="special-popup__wrapper-content">
-                <h3>
-                    У тебя <span id="counter"></span> секунд!
-                </h3>
+                <div class="special-popup__wrapper-content">
+                    <h3>
+                        У тебя <span id="counter"></span> секунд!
+                    </h3>
 
-                <div class="content-block">
-                    <p>
-                        Это предложение больше никогда не появится.
-                    </p>
+                    <div class="content-block">
+                        <p>
+                            Это предложение больше никогда не появится.
+                        </p>
+                    </div>
+
+                    <div class="content-block">
+                        <p>
+                            Зарегистрируйся на вебинар прямо сейчас и получи набор юридических документов для грамотной
+                            работы с клиентами в digital:
+                        </p>
+                    </div>
+
+                    <div class="content-block">
+                        <ul>
+                            <li>
+                                - Договор на digital услуги
+                            </li>
+
+                            <li>
+                                - Форма доп. соглашения
+                            </li>
+
+                            <li>
+                                - Смета работ
+                            </li>
+
+                            <li>
+                                - Акт выполненных работ
+                            </li>
+
+                            <li>
+                                - Счет
+                            </li>
+
+                            <li>
+                                - Акт сверки
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="content-block">
+                        <h4>
+                            Веди свой бизнес грамотно!
+                        </h4>
+                    </div>
+
+                    <a href="#" class="content__main-btn">
+                        <span>
+                            Записаться на вебинар
+                        </span>
+                    </a>
                 </div>
-
-                <div class="content-block">
-                    <p>
-                        Зарегистрируйся на вебинар прямо сейчас и получи набор юридических документов для грамотной
-                        работы с клиентами в digital:
-                    </p>
-                </div>
-
-                <div class="content-block">
-                    <ul>
-                        <li>
-                            - Договор на digital услуги
-                        </li>
-
-                        <li>
-                            - Форма доп. соглашения
-                        </li>
-
-                        <li>
-                            - Смета работ
-                        </li>
-
-                        <li>
-                            - Акт выполненных работ
-                        </li>
-
-                        <li>
-                            - Счет
-                        </li>
-
-                        <li>
-                            - Акт сверки
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="content-block">
-                    <h4>
-                        Веди свой бизнес грамотно!
-                    </h4>
-                </div>
-
-                <a href="#" class="content__main-btn">
-                    <span>
-                        Записаться на вебинар
-                    </span>
-                </a>
             </div>
         </div>
     </div>
