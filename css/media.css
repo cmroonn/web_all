@@ -18,7 +18,7 @@
   .content__info {
     padding-right: 40px; } }
 
-@media screen and (max-height: 945px) and (min-width: 1300px) {
+@media screen and (max-height: 980px) and (min-width: 1300px) {
   .success-popup__video iframe {
     max-width: 500px;
     height: 300px; } }
