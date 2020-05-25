@@ -358,7 +358,6 @@ p {
 .point-dialog {
   color: white;
   position: absolute;
-  min-width: 510px;
   border: 1px solid white;
   border-radius: 8px;
   -webkit-transform: skewX(10deg);
@@ -389,19 +388,24 @@ p {
     display: block; }
   .point-dialog.point-dialog-1 {
     top: -155px;
-    left: -265px; }
+    left: -265px;
+    width: 460px; }
   .point-dialog.point-dialog-2 {
     top: -155px;
-    left: -221px; }
+    left: -221px;
+    width: 515px; }
   .point-dialog.point-dialog-3 {
     top: -181px;
-    left: -126px; }
+    left: -126px;
+    width: 595px; }
   .point-dialog.point-dialog-4 {
     top: -167px;
-    left: -61px; }
+    left: -61px;
+    width: 535px; }
   .point-dialog.point-dialog-5 {
     top: -225px;
-    left: 12px; }
+    left: 12px;
+    width: 520px; }
   .point-dialog .point-dialog-logo {
     z-index: 1;
     position: absolute;
