@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
       setInterval(startCounter, 1000);
     };
 
-    setTimeout(popupOpen, 2000);
+    setTimeout(popupOpen, 50000);
 
     _close.addEventListener("click", function (e) {
       _popup.classList.remove("show");
