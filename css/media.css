@@ -193,6 +193,8 @@
 @media screen and (max-width: 768px) {
   .container {
     padding: 0 5px; }
+  .content {
+    min-height: unset; }
   h1 {
     font-size: 30px;
     max-width: 235px;
