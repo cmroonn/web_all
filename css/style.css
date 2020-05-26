@@ -360,12 +360,15 @@ p {
   position: absolute;
   border: 1px solid white;
   border-radius: 8px;
-  -webkit-transform: skewX(10deg);
-  -ms-transform: skewX(10deg);
-  transform: skewX(10deg);
+  -webkit-transform: skewX(10deg) translate(-48%, -140%);
+  -ms-transform: skewX(10deg) translate(-48%, -140%);
+  transform: skewX(10deg) translate(-48%, -140%);
   margin-left: 20px;
   margin-top: 20px;
   display: none;
+  z-index: 2;
+  top: 0;
+  left: 0;
   /*
     &:before {
         content: '';
@@ -386,26 +389,6 @@ p {
     } */ }
   .point-dialog.show {
     display: block; }
-  .point-dialog.point-dialog-1 {
-    top: -165px;
-    left: -244px;
-    width: 460px; }
-  .point-dialog.point-dialog-2 {
-    top: -155px;
-    left: -205px;
-    width: 515px; }
-  .point-dialog.point-dialog-3 {
-    top: -181px;
-    left: -166px;
-    width: 595px; }
-  .point-dialog.point-dialog-4 {
-    top: -167px;
-    left: -76px;
-    width: 535px; }
-  .point-dialog.point-dialog-5 {
-    top: -225px;
-    left: 5px;
-    width: 520px; }
   .point-dialog .point-dialog-logo {
     z-index: 1;
     position: absolute;
@@ -424,10 +407,11 @@ p {
     -webkit-transform: skew(-10deg);
     -ms-transform: skew(-10deg);
     transform: skew(-10deg);
-    font-weight: 600; }
-    .point-dialog .text span {
+    font-weight: 600;
+    white-space: nowrap; }
+    .point-dialog .text i {
       position: relative; }
-      .point-dialog .text span:before {
+      .point-dialog .text i:before {
         content: "";
         display: block;
         position: absolute;
@@ -436,7 +420,7 @@ p {
         height: 15px;
         top: 3px;
         background-size: cover;
-        left: 16px; }
+        left: -3px; }
   .point-dialog .arrow {
     position: absolute;
     bottom: -17px;
